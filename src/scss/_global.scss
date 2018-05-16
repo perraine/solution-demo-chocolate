@@ -93,8 +93,11 @@ h1, h2, h3, h4, h5 {
 
 p.primary a {
 	color: black;
-    display:none;
+
 }
+
+// hide primary
+p.primary {display:none;}
 
 .global-footer {
 	width: 100%;
