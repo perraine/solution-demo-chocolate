@@ -1,0 +1,190 @@
+[{
+        "customFields": {
+            "alerttype": "alert",
+            "displayname": "Product Scanned Out Of Market}",
+            "icon": "glyphicon-globe"
+        },
+        "name": "_OutOfMarket"
+    }, {
+        "customFields": {
+            "alerttype": "alert",
+            "description": "Recall Product Scanned",
+            "displayname": "Product Recall",
+            "icon": "glyphicon-hand-left"
+        },
+        "name": "_Recall"
+    }, {
+        "customFields": {
+            "description": "Product Reordered via Scan",
+            "displayname": "Product Reordered",
+            "icon": "glyphicon-shopping-cart"
+        },
+        "name": "_Reorder"
+    }, {
+        "customFields": {
+            "description": "Inventory Check",
+            "displayname": "Inventory Check",
+            "icon": "glyphicon-check"
+        },
+        "name": "_InventoryCheck"
+    }, {
+        "customFields": {
+            "description": "Duty Check",
+            "displayname": "Duty Check",
+            "icon": "glyphicon-check"
+        },
+        "name": "_DutyCheck"
+    }, {
+        "customFields": {
+            "description": "Product Purchased at POS",
+            "displayname": "Product Puchased at POS",
+            "icon": "glyphicon-shopping-cart"
+        },
+        "name": "_POS"
+    }, {
+        "customFields": {
+            "description": "Mobile Product Checkout",
+            "displayname": "Mobile Product Checkout",
+            "icon": "glyphicon-shopping-cart"
+        },
+        "name": "_MobileCheckout"
+    }, {
+        "customFields": {
+            "description": "Replenishment Rules Ran",
+            "displayname": "Replenishment Request",
+            "icon": "glyphicon-refresh"
+        },
+        "name": "_Replenish"
+    }, {
+        "customFields": {
+            "alerttype": "warning",
+            "description": "CounterFeit Product Suspected",
+            "displayname": "Counterfeit",
+            "icon": "glyphicon-remove"
+        },
+        "name": "_Counterfeit"
+    }, {
+        "customFields": {
+            "alerttype": "warning",
+            "description": "Expired Product Scanned",
+            "displayname": "Expired Product Scanned",
+            "icon": "glyphicon"
+        },
+        "name": "_Expired"
+    }, {
+        "customFields": {
+            "description": "Customer Scanned for Loyalty",
+            "displayname": "Loyalty Scan",
+            "icon": "glyphicon-thumbs-up"
+        },
+        "name": "_Loyalty"
+    }, {
+        "customFields": {
+            "description": "Inspector Grey Market Check",
+            "displayname": "Inspector Grey Market Check",
+            "icon": "glyphicon-globe"
+        },
+        "name": "_DivertedProductCheck"
+    }, {
+        "customFields": {
+            "description": "Counterfeit Check",
+            "displayname": "Counterfeit Check",
+            "icon": "glyphicon-globe"
+        },
+        "name": "_CounterfeitCheck"
+    }, {
+        "customFields": {
+            "description": "Offer Given",
+            "displayname": "Offer Given",
+            "icon": "glyphicon-gift"
+        },
+        "name": "_Offer"
+    }, {
+        "customFields": {
+            "description": "Offer Redeemed by Customer",
+            "displayname": "Offer Redeemed",
+            "icon": "glyphicon-check"
+        },
+        "updatedAt": 1483954978556,
+        "name": "_OfferTaken"
+    }, {
+        "customFields": {
+            "description": "A Registered Customer",
+            "displayname": "Customer Registration",
+            "icon": "glyphicon-user"
+        },
+        "name": "_Registration"
+    }, {
+        "customFields": {
+            "description": "Product Scanned in Expected Market",
+            "displayname": "In Market Product",
+            "icon": "glyphicon-saved"
+        },
+        "name": "_InMarket"
+    }, {
+        "id": "UFre72HHVM87tNaaRhmpYkQt",
+        "createdAt": 1490344106192,
+        "customFields": {
+            "alerttype": "warning",
+            "displayname": "Two Factor Check Failed",
+            "icon": "glyphicon-warning-sign"
+        },
+        "updatedAt": 1490345769098,
+        "name": "_CounterfeitTwoFactorCheckFailed"
+    },
+    {
+        "id": "UFM9KFdsVqPNQ7aaRE5XaEnk",
+        "createdAt": 1490008126917,
+        "customFields": {
+            "alerttype": "warning",
+            "displayname": "Counterfeit : Scan Patterns",
+            "icon": "glyphicon-warning-sign"
+        },
+        "tags": [
+            "Counterfeit"
+        ],
+        "updatedAt": 1490345796991,
+        "name": "_CounterFeitScanPatternIssue"
+    },
+    {
+        "id": "U2qQpYmMeqPrQNaRwE5DwEmr",
+        "createdAt": 1490007964543,
+        "customFields": {
+            "alerttype": "warning",
+            "displayname": "Counterfeit : Code not validated",
+            "icon": "glyphicon-warning-sign"
+        },
+        "tags": [
+            "Counterfeit"
+        ],
+        "updatedAt": 1490345818535,
+        "name": "_CounterfeitScanningCodeNotValidated"
+    },
+    {
+        "id": "U2MQpYw6eMsrQNaRaD5KAebb",
+        "createdAt": 1490007820592,
+        "customFields": {
+            "displayname": "Perform 2 Factor Check",
+            "icon": "glyphicon-repeat"
+        },
+        "tags": [
+            "Counterfeit"
+        ],
+        "updatedAt": 1490345858890,
+        "name": "_CounterfeitScanningTwoFactorCheck"
+    },
+    {
+        "id": "U2MK3dw3MG8YEMRRah6Psb2g",
+        "createdAt": 1489736457495,
+        "customFields": {
+            "alerttype": "warning",
+            "displayname": "Diverted Product",
+            "icon": "glyphicon-warning-sign"
+        },
+        "tags": [
+            "Counterfeit"
+        ],
+        "updatedAt": 1490345641006,
+        "name": "_CounterfeitScanningLocationIssues"
+    }
+]

@@ -1,0 +1,18 @@
+  {
+      "name": "Consumer Application",
+      "customFields": {
+          "bannerBrand": "https://i.imgur.com/BzHgU4e.png",
+          "bannerColor": "#EA000A",
+          "bannerTextColor": "white",
+          "defaultCounterfeitMessage": "We cannot guarantee the authenticity of this product.",
+          "modalTitleInformation": "Title",
+          "modalTitleRedeem": "Redeem Offer",
+          "modalTitleReorder": "Reorder",
+          "modalTitleReviews": "Customer Reviews",
+          "modalTitleTimeline": "Traceability",
+          "modalTitleVideo": "Video",
+          "runCounterfeitRules": "true",
+          "showCounterfeitScreen": "true"
+      },
+      "socialNetworks": {}
+  }

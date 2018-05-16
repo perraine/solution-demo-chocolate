@@ -1,0 +1,14 @@
+// Exclude Fields CSS (They're all there really!)
+[for*="Thng-tags"],
+[for*="CustomField-actionType"],
+[for*="CustomField-menuLabel"],
+[for*="CustomField-actionType"],
+[for*="CustomField-state"],
+[for*="CustomField-counterfeit"],
+[for*="CustomField-dutypaid"],
+[for*="piped"],
+[for*="@"],
+.pipedField
+{
+	display: none;
+}

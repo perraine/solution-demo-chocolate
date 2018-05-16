@@ -1,0 +1,32 @@
+.offer-disc {
+	width: 5.4rem;
+	height: 5.4rem;
+	background: $brand-color;
+	border-radius: 50%;
+	line-height: 5.2rem;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	color: white;
+	font-weight: 400;
+	position: absolute;
+	z-index: 5;
+	border: 2px solid white;
+	top: -2.5rem;
+	right: 0;
+}
+
+.offer-text {
+	color: $brand-color;
+	font-weight: 400;
+	font-size: 1.2rem;
+	display: block;
+}
+
+.offer-price {
+	font-size: 2.4rem;
+	font-weight: 400;
+}
+
+.offer-sub-text {
+	font-size: 1.3rem;
+}

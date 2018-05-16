@@ -1,0 +1,23 @@
+[{
+  "id": "UkwQm9cMT9HMGtSgtgHe5Qdt",
+  "createdAt": 1477418796167,
+  "customFields": {
+    "quantity_per_case": "6",
+    "size": "75"
+  },
+  "tags": [
+    "Finished Product"
+  ],
+  "updatedAt": 1494225615045,
+  "brand": "Category 1",
+  "properties": {},
+  "description": "Red Table Wine",
+  "fn": "Red Wine - Pinot Noir",
+  "name": "Red Wine - Pinot Noir",
+  "photos": [
+    "https://evt-images.netlify.com/red-wine.jpg"
+  ],
+  "identifiers": {
+    "sku": "FP1P212342"
+  }
+}]

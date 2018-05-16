@@ -1,0 +1,63 @@
+.timeline-events {
+	margin: 0;
+	padding: 0;
+}
+
+.timeline-event {
+	background: white;
+	list-style-type: none;
+	width: 100%;
+	max-width: 600px;
+	margin: 3.2rem auto;
+	padding: 1.6rem;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+	border-radius: 3px;
+	position: relative;
+	text-align: center;
+
+	&:before {
+		content: '';
+		display: block;
+		width: 8px;
+		height: 3.2rem;
+		background: #333;
+		position: absolute;
+		bottom: -3.2rem;
+		left: 50%;
+		margin-left: -4px;
+	}
+
+	&:last-child:before {
+		height: 0;
+	}
+
+	.date {
+		display: block;
+		border-bottom: 1px solid #EBEBEB;
+		padding-bottom: 01.2rem;
+		margin-bottom: 0.8rem;
+		font-weight: 400;
+	}
+
+	.location {
+		display: block;
+		font-size: 1.2rem;
+		font-weight: 400;
+	}
+
+	.icon {
+		position: absolute;
+		top: 0.4rem;
+		left: 0.8rem;
+		background: #333;
+		color: white;
+		line-height: 1em;
+		border-radius: 50%;
+		text-align: center;
+		width: 4rem;
+		height: 4rem;
+		line-height: 4rem;
+		text-align: center;
+	}
+
+}

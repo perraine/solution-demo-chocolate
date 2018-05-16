@@ -1,0 +1,8 @@
+{
+  "name": "counterfeitRules",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "lodash": "^4.16.2"
+  }
+}

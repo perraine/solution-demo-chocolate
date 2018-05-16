@@ -1,0 +1,83 @@
+#redeem-offer {
+	background: rgba(255,255,255,1);
+
+	.modal__wrapper {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+}
+
+#product-information.modal {
+	h1 {
+		&:before {
+			content: 'Information'; // I know this is bad!
+		}
+	}
+}
+
+#video.modal {
+	h1 {
+		&:before {
+			content: 'Video'; // I know this is bad!
+		}
+	}
+}
+
+#reviews.modal {
+	h1 {
+		&:before {
+			content: 'Product Reviews'; // I know this is bad!
+		}
+	}
+}
+
+#timeline.modal {
+	h1 {
+		&:before {
+			content: 'Timeline'; // I know this is bad!
+		}
+	}
+}
+
+#redeem-offer.modal {
+	h1 {
+		&:before {
+			content: 'Redeem Offer'; // I know this is bad!
+		}
+	}
+}
+
+#reorder-list.modal {
+	h1 {
+		&:before {
+			content: 'Reorder'; // I know this is bad!
+		}
+	}
+}
+
+#scans-simulation.modal {
+	h1 {
+		&:before {
+			content: 'Scan Simulation'; // I know this is bad!
+		}
+	}
+}
+
+#loader.modal {
+
+	.loader {
+		display: block;
+		background: transparent;
+	}
+
+	.overlay-toggle {
+		display: none;
+	}
+
+	h1 {
+		&:before {
+			content: 'Loading...'; // I know this is bad!
+		}
+	}
+}

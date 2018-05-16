@@ -1,0 +1,44 @@
+<div class="hero-container">
+
+        <div class="offer-disc"><i class="mdi mdi-check"></i></div>
+
+        <div class="hero"></div>
+        <!-- populated by THNG Product image -->
+
+        <!-- Dummy button if no video set -->
+        <a href="#" class="fab-button right-fab default-rating">
+          <i class="mdi mdi-star-outline"></i>
+        </a>
+        <!-- Video icon and link -->
+        <a href="#video" class="fab-button right-fab overlay-toggle video-trigger">
+          <i class="mdi mdi-youtube-play" style="line-height: 5rem;"></i>
+        </a>
+
+        <a href="#product-information" class="fab-button left-fab overlay-toggle">
+          <i class="mdi mdi-information-variant"></i>
+        </a>
+        <!-- trigger to launch Provenance Modal (populated by THNG) - to be found at the end of this file -->
+
+</div>
+
+<h1>
+  <!-- set on THNG -->
+</h1>
+
+<span class="post-purchase-date">Purchased on <script>document.write(new Date().toLocaleDateString('en-GB', {day : 'numeric', month : 'short', year : 'numeric'}).split(' ').join(' '));</script></span>
+
+<div class="post-purchase-offer">
+  <span class="post-purchase-offer-txt">
+    <!-- set on THNG -->
+  </span>
+  <span class="post-purchase-offer-txt-optional sub-offer">
+    <!-- set on THNG -->
+  </span>
+</div>
+
+<p class="offer-sub-text">
+    <!-- completely optional sub-text for the offer page, currently set in config.js -->
+</p>
+
+    <!-- subtle link to allow THNG to be reset -->
+<a href="#" class="remove-post-purchase">Return Product</a>

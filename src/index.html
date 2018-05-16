@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="utf-8">
+
+  <!-- Title set by App name -->
+  <title></title>
+
+  <meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <link rel="stylesheet" href="css/style.css?v05052017">
+
+</head>
+
+<body>
+
+@@include('./html/_global/alert.html')
+@@include('./html/_global/menu.html')
+@@include('./html/_global/header.html')
+
+<div class="wrapper">
+<!-- Populate screens from template -->
+@@include('./html/_templates/screen.html', {
+	"state" : "start",
+	"file" : "@@include('../screens/start.html')"
+})
+@@include('./html/_templates/screen.html', {
+	"state" : "offer",
+	"file" : "@@include('../screens/product.html')"
+})
+@@include('./html/_templates/screen.html', {
+	"state" : "post-purchase",
+	"file" : "@@include('../screens/post-purchase.html')"
+})
+@@include('./html/_templates/screen.html', {
+	"state" : "owned",
+	"file" : "@@include('../screens/owned.html')"
+})
+@@include('./html/_templates/screen.html', {
+	"state" : "recall",
+	"file" : "@@include('../screens/recall.html')"
+})
+@@include('./html/_templates/screen.html', {
+	"state" : "grey",
+	"file" : "@@include('../screens/grey.html')"
+})
+@@include('./html/_templates/screen.html', {
+	"state" : "expired",
+	"file" : "@@include('../screens/expired.html')"
+})
+@@include('./html/_templates/screen.html', {
+	"state" : "registration",
+	"file" : "@@include('../screens/registration.html')"
+})
+@@include('./html/_templates/screen.html', {
+	"state" : "reward",
+	"file" : "@@include('../screens/reward.html')"
+})
+@@include('./html/_templates/screen.html', {
+	"state" : "counterfeitcheck",
+	"file" : "@@include('../screens/counterfeitcheck.html')"
+})
+@@include('./html/_templates/screen.html', {
+	"state" : "reorder",
+	"file" : "@@include('../screens/product.html')"
+})
+@@include('./html/_templates/screen.html', {
+	"state" : "dutycheck",
+	"file" : "@@include('../screens/dutycheck.html')"
+})
+@@include('./html/_templates/screen.html', {
+	"state" : "recycling",
+	"file" : "@@include('../screens/recycling.html')"
+})
+@@include('./html/_templates/screen.html', {
+	"state" : "counterfeitcheck2factor",
+	"file" : "@@include('../screens/counterfeitcheck2factor.html')"
+})
+@@include('./html/_templates/screen.html', {
+	"state" : "freestanding",
+	"file" : "@@include('../screens/freestanding.html')"
+})
+</div>
+
+<!-- All the Modals // Names must be unique/different to state -->
+@@include('./html/_templates/modal.html', {
+	"id" : "product-information",
+	"file" : "@@include('../modals/product-information.html')"
+})
+@@include('./html/_templates/modal.html', {
+	"id" : "video",
+	"file" : "@@include('../modals/video.html')"
+})
+@@include('./html/_templates/modal.html', {
+	"id" : "reviews",
+	"file" : "@@include('../modals/reviews.html')"
+})
+@@include('./html/_templates/modal.html', {
+	"id" : "timeline",
+	"file" : "@@include('../modals/timeline.html')"
+})
+@@include('./html/_templates/modal.html', {
+	"id" : "redeem-offer",
+	"file" : "@@include('../modals/redeem-offer.html')"
+})
+@@include('./html/_templates/modal.html', {
+	"id" : "reorder-list",
+	"file" : "@@include('../modals/reorder-list.html')"
+})
+@@include('./html/_templates/modal.html', {
+  "id" : "scans-simulation",
+  "file" : "@@include('../modals/scans-simulation.html')"
+})
+@@include('./html/_templates/modal.html', {
+	"id" : "loader",
+	"file" : "@@include('../modals/loader.html')"
+})
+
+@@include('./html/_global/footer.html')
+@@include('./html/_global/scripts.html')
+<script src="//cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.19.1/js/vendor/jquery.ui.widget.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.19.1/js/jquery.iframe-transport.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.19.1/js/jquery.fileupload.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/cloudinary-jquery-file-upload/2.3.0/cloudinary-jquery-file-upload.min.js"></script>
+<script>
+// Cloudinary Config
+// ***************
+$(document).ready(function() {
+  $.cloudinary.config({cloud_name: 'evrythng'});
+  if($.fn.cloudinary_fileupload !== undefined) {
+    $("input.cloudinary-fileupload[type=file]").cloudinary_fileupload();
+  }
+})
+</script>
+</body>
+</html>

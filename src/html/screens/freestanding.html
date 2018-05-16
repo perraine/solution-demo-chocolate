@@ -1,0 +1,56 @@
+<div class="hero-container">
+	<a href="#timeline" class="fab-button left-fab overlay-toggle">
+    <i class="mdi mdi-history" style="line-height: 5rem;"></i>
+  </a>
+	<div class="hero"></div>
+</div>
+
+<h1>
+	<!-- set on THNG -->
+</h1>
+
+<p class="primary">
+	<!-- set on THNG -->
+</p>
+
+<form class="freestanding-form">
+	<!-- set on THNG - customField(s): formXX -->
+
+	<p>Please select status/update:</p>
+
+	<label class="radiocheck done">
+		<input type="radio" name="status" value="up" disabled>
+		<i></i>
+		Set-Up &amp; Ready
+	</label>
+	<label class="radiocheck">
+		<input type="radio" name="status" value="Inspection" class="option">
+		<i></i>
+		Inspecting
+	</label>
+	<label class="radiocheck">
+		<input type="radio" name="status" value="Taken Down" class="option">
+		<i></i>
+		Taken Down
+	</label>
+	<label class="radiocheck">
+		<input type="radio" name="status" value="Recycled" class="option">
+		<i></i>
+		Recycled
+	</label>
+
+	<input type="hidden" name="imageInfo" id="imageInfo" value="waiting" />
+
+	<!-- <button class="button basket">
+		set on THNG
+	</button> -->
+	<label name="freestanding_upload" class="uploadButton">
+		Take Photo
+		<input name="file" type="file" class="cloudinary-fileupload" id="freestanding_upload" data-cloudinary-field="imageInfo"
+	   data-form-data="{
+			 &quot;upload_preset&quot;: &quot;demo_app&quot;,
+			 &quot;callback&quot;: &quot;//&quot;
+		 }" />
+	</label>
+
+</form>

@@ -1,0 +1,12 @@
+[{
+        "name": "Red Bretton Shirt",
+          "description": "Think of something more classic than a Breton top. You literally can’t. They’re the basic of all basics (in a good way), the epitome of Parisian cool. Try and imagine a weekend where you couldn’t wear one",
+        "photos": ["https://content.screencast.com/users/Dashenhurst/folders/Jing/media/881a74a2-0502-4b13-8031-2a4f82a3c23b/00001394.png"],
+        "customFields" : {
+          "quantity" : 50,
+          "quantityPerPallet" : 3000,
+          "size" : "Medium",
+          "color" : "red"
+        }
+    }
+]

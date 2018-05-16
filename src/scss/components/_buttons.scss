@@ -1,0 +1,179 @@
+.button {
+	display: inline-block;
+	text-decoration: none;
+	background: #333;
+	height: 44px;
+	line-height: 44px;
+	padding: 0 1.6rem;
+	border-radius: 3px;
+	color: white;
+	font-size: 1.2rem;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	min-width: 200px;
+	text-align: center;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	transition: all 0.2s;
+	text-transform: uppercase;
+	border: 0;
+
+	&:hover {
+		cursor: pointer;
+		box-shadow: 0 0px 2px 0 rgba(0,0,0,0.16),0 2px 5px 0 rgba(0,0,0,0.12);
+	}
+
+	&.basket {
+		background: #333;
+		width: 100%;
+		max-width: 300px;
+
+		&:hover {
+			background: darken(#333, 10%);
+		}
+	}
+
+	&.share {
+
+		&.facebook, &.twitter {
+
+			&:before {
+				vertical-align: -4px;
+				font-family: $icon-font;
+				font-size: 2.4rem;
+			}
+
+		}
+
+		&.facebook {
+			background: #3B5998;
+
+			&:before {
+				content:'\F20C';
+			}
+
+		}
+
+		&.twitter {
+			background: #1DA1F2;
+
+			&:before {
+				content:'\F544';
+			}
+		}
+	}
+
+	&.hide {
+		display: none;
+	}
+}
+
+.fab-button {
+	width: 4.8rem;
+	height: 4.8rem;
+	display: inline-block;
+	background: white;
+	vertical-align: middle;
+	border-radius: 50%;
+	color: black;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+
+	.mdi {
+		line-height: 4.8rem;
+	}
+
+	&.add-cart {
+		background: #62BD58;
+		color: white;
+	}
+}
+
+.radiocheck {
+	display: block;
+	max-width: 30rem;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	height: 4.4rem;
+	line-height: 4rem;
+	font-weight: bold;
+	border: 2px solid #f4f4f4;
+	cursor: pointer;
+	text-transform: uppercase;
+	margin-bottom: 0.8rem;
+
+	input[type=radio], input[type=checkbox] {
+		display: none;
+		position: absolute;
+		left: 1.6rem;
+		top: 50%;
+		margin-top: -0.8rem;
+
+		&:checked {
+
+			~ i {
+				background: #333;
+			}
+
+		}
+	}
+
+	i {
+		width: 2.4rem;
+		height: 2.4rem;
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 0.8rem;
+		margin-top: -1.2rem;
+		border: 0.3rem solid silver;
+		border-radius: 50%;
+		transition: background 0.3s;
+	}
+  
+	&.done {
+		border-color: lighten(green, 10%);
+		background: lighten(green, 10%);
+		color: white;
+		opacity: 0.65;
+
+		i {
+			border-color: transparent;
+
+			&:before {
+				content: "\F12C";
+				font-family: $icon-font;
+				line-height: 1em;
+				font-size: 1.8rem;
+				position: absolute;
+				top: 0rem;
+				right: 0.3rem;
+			}
+		}
+	}
+}
+
+.uploadButton {
+	display: inline-block;
+	text-decoration: none;
+	background: #333;
+	height: 44px;
+	line-height: 44px;
+	padding: 0 1.6rem;
+	border-radius: 3px;
+	color: white;
+	font-size: 1.2rem;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	min-width: 200px;
+	text-align: center;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	transition: all 0.2s;
+	text-transform: uppercase;
+	border: 0;
+
+	input[type=file] {
+		display: none;
+	}
+
+}

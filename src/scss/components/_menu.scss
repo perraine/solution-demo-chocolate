@@ -1,0 +1,42 @@
+.menu-links {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 600;
+	width: 280px;
+	height: 100%;
+	background: white;
+	padding: 0.8rem 0;
+	transform: translate(-280px,0);
+	transition: all 0.5s;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+
+	a {
+		display: block;
+		height: 48px;
+		line-height: 48px;
+		padding-left: 3.2rem;
+		color: #666;
+		text-decoration: none;
+		font-weight: 500;
+
+		&:hover {
+			background: #ebebeb;
+			color: black;
+		}
+	}
+}
+
+.menu-overlay {
+	position: fixed;
+	top: -100%;
+	left: 0;
+	bottom:0;
+	right: 0;
+	height: 100%;
+	background: black;
+	opacity: 0;
+	z-index: 500;
+	transition: opacity 0.5s;
+}

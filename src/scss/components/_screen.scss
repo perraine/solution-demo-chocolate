@@ -1,0 +1,36 @@
+// Screen
+.screen {
+	display: none;
+	text-align: center;
+}
+
+.screen__header {
+	height: 120px;
+	background: #333;
+
+	h1 {
+		color: white;
+		line-height: 120px;
+		display: none;
+	}
+
+}
+
+.screen__content {
+	max-width: 650px;
+	margin: 0 auto;
+	padding: 2.4rem 1.4rem;
+	margin-top: -100px;
+
+	&.flush-top {
+		padding-top: 0;
+	}
+
+	h1 {
+		margin: 0;
+		line-height: 1.2em;
+		text-align: center;
+		padding-top: 0.8rem;
+	}
+
+}

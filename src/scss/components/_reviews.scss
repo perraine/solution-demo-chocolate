@@ -1,0 +1,49 @@
+.review-items {
+	margin-top: 2.2rem;
+}
+
+.review-filters {
+	padding-top: 1.8rem;
+	font-weight: 400;
+
+	a {
+		color: #333;
+	}
+}
+
+.reviewer-item {
+	text-align: left;
+	border-bottom: 1px solid #ebebeb;
+	padding: 1.6rem 0;
+
+	&:first-child {
+		padding-top: 0;
+	}
+	&:last-child {
+		border: 0;
+	}
+}
+
+.reviewer-title {
+	font-weight: 400;
+	color: black;
+}
+
+.reviewer-by-line {
+	font-size: 1.2rem;
+}
+
+.reviewer-stars {
+
+	.mdi {
+		font-size: 1.6rem;
+		color: orange;
+	}
+	
+}
+
+.reviewer-vote {
+	text-align: right;
+	font-size: 1.2rem;
+	color: #999;
+}

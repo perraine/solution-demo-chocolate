@@ -1,0 +1,31 @@
+.post-purchase-date {
+	font-size: 1.6rem;
+	display: block;
+	color: black;
+	padding-bottom: 1.6rem;
+}
+
+.post-purchase-offer {
+	// background: #ccc;
+	border: 2px dashed #ccc;
+	padding: 0.8rem;
+	max-width: 400px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.sub-offer {
+	display: block;
+	color: black;
+	font-weight: 400;
+}
+
+.remove-post-purchase {
+	text-decoration: none;
+	font-size: 1rem;
+	text-transform: uppercase;
+	color: #ccc;
+	font-weight: 400;
+	display: block;
+	margin-top: 1.6rem;
+}

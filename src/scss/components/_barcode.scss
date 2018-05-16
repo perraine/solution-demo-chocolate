@@ -1,0 +1,28 @@
+.barcode {
+	position: relative;
+
+	.valid-date {
+		position: absolute;
+		background: white;
+		left: 50%;
+		bottom: -3px;
+		margin-left: -80px;
+		padding: 0.2rem 0.8rem;
+		font-size: 1.1rem;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+		font-weight: 600;
+		width: 160px;
+		color: black;
+		display: none;
+
+		&.show {
+			display: block;
+		}
+	}
+
+	img {
+		max-width: 250px;
+	}
+	
+}

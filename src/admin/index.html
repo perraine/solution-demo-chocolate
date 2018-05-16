@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+
+  <title>EVRYTHNG Solutions Demo App: Admin</title>
+
+  <meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="/css/style.css?v1.9">
+  <link rel="stylesheet" href="/css/admin.css?v1.9">
+</head>
+
+<body>
+
+<div class="admin-banner"></div>
+
+<div class="admin-wrapper">
+
+	<h1>Demo App Admin</h1>
+
+	<form id="admin-setup-details">
+
+		<div class="admin-setup-fields">
+
+			<p>In order to use this admin screen you will need to have an EVRYTHNG account set-up, from which you'll need your Operator API Key and the API Key of App you wish to edit.</p>
+
+			<label for="user-op-key">
+				Operator API Key
+				<input type="text" id="user-op-key" name="user-op-key" value="" />
+				<span class="hint">Keep this key safe as it's linked directly to your account</span>
+			</label>
+
+			<label for="user-app-key">
+				App API Key (not Trusted API Key)
+				<input type="text" id="user-app-key" name="user-app-key" value="" />
+			</label>
+
+			<h2>API Region</h2>
+
+			<label for="user-api-region_usa" class="checkradio">
+				<input type="radio" name="user-api-region" id="user-api-region_usa" value="usa" checked="checked" />
+				<i></i>
+				USA (default)
+			</label>
+			<label for="user-api-region_eu" class="checkradio">
+				<input type="radio" name="user-api-region" id="user-api-region_eu" value="eu" />
+				<i></i>
+				EU
+			</label>
+
+			<div style="text-align: right;">
+				<button class="button">Download Application Information</button>
+			</div>
+
+		</div>
+
+	</form>
+
+	<section class="admin-sticky-nav">
+
+		<article class="admin-sticky-nav__wrapper">
+
+			<button class="button admin-reset-button">Start Again</button>
+
+			<a href="#" class="button view-app-button" target="_blank">View App</a>
+
+			<div class="admin-app-title-controls">
+
+				<label for="app-name">
+					App Title
+					<input type="text" id="app-name" name="app-name" />
+				</label>
+
+				<input type="hidden" id="app-id" />
+				<input type="hidden" id="project-id" />
+
+				<label for="app-screen-select" class="app-screen-select">
+					Currently Viewing
+					<span class="admin-dropdown">
+						<select id="app-screen-select">
+							<option selected="selected" value="default" disabled="disabled">Select Screen</option>
+							<option value="config-brand-colors">Brand & Colors</option>
+						</select>
+					</span>
+				</label>
+
+			</div>
+
+		</article>
+
+	</section>
+
+	<div id="app-screens">
+
+		<div id="config-brand-colors" class="admin-section">
+
+			<!-- Header from App -->
+			<header class="global-header" style="background: #EA000A;">
+
+			  <a href="#" class="global-controls left main-menu-toggle">
+			    <i class="mdi mdi-menu"></i>
+			  </a>
+
+			  <div class="brand">
+			    <a href="#">
+			      <div class="brand-img" style="background-image: url(//i.imgur.com/BzHgU4e.png);"></div>
+			    </a>
+			  </div>
+
+			  <a href="#" class="global-controls right clear-app-storage">
+			    <i class="mdi mdi-dots-vertical"></i>
+			  </a>
+
+			</header>
+			<!-- // Header form App -->
+
+			<label for="app-logo">
+				App Logo
+				<input type="text" id="app-logo" name="app-logo" placeholder="No App Logo set - defaults to EVRYTHNG Logo" />
+			</label>
+
+			<div class="half-inputs">
+
+				<label for="app-banner">
+					App Banner Color
+					<input type="text" id="app-banner" name="app-banner" placeholder="No Banner Colour set - defaults to EVRYTHNG red" />
+				</label>
+
+				<label for="app-banner-txt">
+					App Banner Text Color
+					<input type="text" id="app-banner-txt" name="app-banner-txt" placeholder="No Banner Text Colour set - defaults to white" />
+				</label>
+
+			</div>
+
+			<hr />
+
+			<a href="#" class="appAdvancedOptions">
+				<span class="closed">View/Edit</span><span class="open">Hide</span> Advanced Settings
+			</a>
+
+			<section class="app-advanced-options">
+
+				<p>The following fields can be left as-is as the defaults will be applied.</p>
+
+				<div class="half-inputs">
+
+					<label for="modal-information">
+						Modal Title: Information
+						<input type="text" id="modal-information" name="modal-information" placeholder="Default: Information" />
+					</label>
+
+					<label for="modal-video">
+						Modal Title: Video
+						<input type="text" id="modal-video" name="modal-video" placeholder="Default: Video" />
+					</label>
+
+				</div>
+
+				<div class="half-inputs">
+
+					<label for="modal-reviews">
+						Modal Title: Reviews
+						<input type="text" id="modal-reviews" name="modal-reviews" placeholder="Default: Reviews" />
+					</label>
+
+					<label for="modal-timeline">
+						Modal Title: Timeline
+						<input type="text" id="modal-timeline" name="modal-timeline" placeholder="Default: Timeline" />
+					</label>
+
+				</div>
+
+				<div class="half-inputs">
+
+					<label for="modal-redeem">
+						Modal Title: Redeem Offer
+						<input type="text" id="modal-redeem" name="modal-redeem" placeholder="Default: Redeem Offer" />
+					</label>
+
+					<label for="modal-reorder">
+						Modal Title: Reorder
+						<input type="text" id="modal-reorder" name="modal-reorder" placeholder="Default: Reorder" />
+					</label>
+
+				</div>
+
+				<hr />
+
+				<section class="additionalAppCustomFields"></section>
+
+			</section>
+
+		</div>
+
+		<div class="admin-section thngSection">
+			<!-- Populated by Js - changed via dropdown -->
+		</div>
+
+	</div>
+
+</div>
+
+<div class="toaster">
+
+	<div class="toaster__message">
+		App Saved...
+	</div>
+
+</div>
+
+<div class="admin-actions">
+	<button class="button save">Save Page</button>
+</div>
+
+<!-- jQuery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- EVRYTHNG Extended -->
+<script src="//d10ka0m22z5ju5.cloudfront.net/toolkit/evrythng-js-sdk/evrythng-extended-4.3.0.min.js"></script>
+<script src="/scripts/admin.min.js"></script>
+</body>
+</html>

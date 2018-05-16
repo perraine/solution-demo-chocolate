@@ -1,0 +1,22 @@
+.video {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 50rem;
+	padding-top:2.4rem;
+}
+
+.video-trigger {
+	display: none !important;
+}
+
+.video-on {
+
+	.default-rating {
+		display: none !important;
+	}
+
+	.video-trigger {
+		display: block !important;
+	}
+
+}

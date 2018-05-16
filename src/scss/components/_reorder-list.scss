@@ -1,0 +1,77 @@
+.reorder-list {
+	background: white;
+	background: #fff;
+    list-style-type: none;
+    width: 100%;
+    max-width: 600px;
+    margin: 3.2rem auto;
+    padding: 1.6rem;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+    border-radius: 3px;
+    position: relative;
+    text-align: left;
+
+    ul {
+    	list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    }
+
+    .reorder-list__item {
+    	padding: 1.7rem 0.8rem;
+    	border-top: 1px solid #ebebeb;
+
+    	&:first-child {
+    		border: 0;
+    	}
+    }
+
+    .reorder-list__link {
+    	display: block;
+    	position: relative;
+    	text-decoration: none;
+    	color: #333;
+    	cursor: pointer;
+    }
+
+    .reorder-list__img {
+    	width: 10rem;
+    	height: 8rem;
+    	position: absolute;
+    	top: 0;
+    	background: white url(https://corporatewatch.org/sites/default/files/Tesco-Logo-Colour1.jpg) no-repeat center center;
+    	background-size: 90% auto;
+    	box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+    }
+
+    .reorder-list__content {
+    	display: block;
+    	width: 100%;
+    	padding-left: 11.6rem;
+    	padding-right: 2.4rem;
+    	min-height: 8rem;
+    }
+
+    .reorder-list__title, .reorder-list__description, .reorder-list__price {
+    	display: block;
+    }
+
+    .reorder-list__title, .reorder-list__price {
+    	font-weight: 400;
+    }
+
+    .reorder-list__description {
+    	overflow: hidden;
+    	white-space:nowrap;
+    	text-overflow: ellipsis;
+    	font-size: 1.2rem;
+    }
+
+    .reorder-list__icon {
+    	position: absolute;
+    	top: 50%;
+    	right: -1.2rem;
+    	margin-top: -1.2rem;
+    }
+
+}

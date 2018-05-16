@@ -1,0 +1,11 @@
+{
+  "rules": [
+    {
+      "match": "product.id={{PRODUCT_ID}}",
+      "name": "Default Redirection : {{PRODUCT_NAME}}",
+      "redirectUrl": "{{KIDGER_URL}}?thng=%7Bthng.id%7D&state=%7Bthng.customFields.state%7D&appKey={{APP_API_KEY}}&region={{REGION}}#",
+      "delegates": [],
+      "constants": {}
+    }
+  ]
+}

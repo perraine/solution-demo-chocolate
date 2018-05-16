@@ -1,0 +1,26 @@
+{
+    "id": "UFPB6F3heXPwtKaRagwUmdah",
+    "createdAt": 1491388567695,
+    "customFields": {
+      "ExternalScan": true
+    },
+    "timestamp": 1491388567695,
+    "type": "_Simulation",
+    "user": "UkPUHyrwBMPr9NRwaYyy5cKb",
+    "location": {
+      "latitude": 51.530228199999996,
+      "longitude": -0.0864537,
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          -0.0864537,
+          51.530228199999996
+        ]
+      }
+    },
+    "locationSource": "sensor",
+    "createdByProject": "UF8ACDypVg8aQ5waakBDWBqp",
+    "createdByApp": "UFPAfgyKVqPr9raRahyc4sRq",
+    "thng": "UFPdHTmRBD8w9KaaRXnKSdSf",
+    "product": "Uk8A4c3aVqPrtrawRETcpcGk"
+  }

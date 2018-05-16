@@ -1,0 +1,83 @@
+.sustainability-item {
+	text-align: left;
+	padding: 1.6rem 0;
+
+	.list-name {
+		display: block;
+		font-weight: 400;
+	}
+
+}
+
+.accordion-item {
+	border-top: 1px solid #ebebeb;
+	padding: 0;
+	overflow: hidden;
+	cursor: pointer;
+
+	.list-name {
+		vertical-align: middle;
+		padding: 1.6rem 0.8rem 1.6rem 0.4rem;
+		position: relative;
+
+		.mdi {
+			vertical-align: middle;
+			padding-right: 0.6rem;
+			color: #666;
+		}
+
+		&:after {
+			content:'\F142';
+			font-family: $icon-font;
+			font-size: 2.4rem;
+			position: absolute;
+			width: 4rem;
+			height: 4rem;
+			display: block;
+			text-align: center;
+			line-height: 4rem;
+			top: 8px;
+			right: 0px;
+			color: #666;
+		}
+
+	}
+
+	.list-value {
+		display: block;
+		padding: 0 0.4rem;
+		height: 0;
+		transition: all 0.5s;
+
+		img {
+			width: 90%;
+			display: block;
+			margin: 0 auto 0.8rem auto;
+		}
+
+		a {
+			font-weight: bold;
+			color: #000;
+		}
+
+	}
+
+	&.on {
+
+		.list-name:after {
+			transform: rotate(90deg);
+		}
+
+		.list-value {
+			display: block;
+			padding-bottom: 0.8rem;
+			height: auto;
+		}
+
+	}
+
+	&:last-child {
+		border-bottom: 1px solid #ebebeb;
+	}
+
+}
