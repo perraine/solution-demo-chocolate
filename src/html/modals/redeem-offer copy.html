@@ -1,0 +1,36 @@
+<div class="screen__header"></div>
+
+<div class="screen__content">
+
+  <div class="hero-container">
+    <div class="hero">
+      <i class="mdi mdi-thumb-up-outline"></i>
+    </div>
+  </div>
+
+  <p>
+    <!-- <span class="redeem-offer-conf-text">
+      &nbsp;
+    </span>
+    <br /> -->
+    <span class="redeem-offer-conf-text-optional">
+      Your offer can be redeemed by presenting the code below at the till.
+    </span>
+  </p>
+
+  <a href="#" class="barcode make-post-purchase">
+    <span class="valid-date show">Valid until
+    <script>
+    var someDate = new Date();
+    var numberOfDaysToAdd = 4;
+    var offerDate = someDate.setDate(someDate.getDate() + numberOfDaysToAdd);
+    var dd = someDate.getDate();
+    var mm = someDate.getMonth() + 1;
+    var y = someDate.getFullYear();
+    document.write(dd + '/' + mm + '/' + y);
+    </script>
+    </span>
+    <img src="assets/barcode.png" />
+  </a>
+
+</div>
