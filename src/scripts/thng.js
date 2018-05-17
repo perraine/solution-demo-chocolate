@@ -72,6 +72,8 @@ function loadThng(appId, appMenu) {
 
                     if (state == 'offer') {
 
+                        $('.offer-disc').css('display', 'none');
+
                         user.thng(thngId).property('post-purchase').read().then(function(results) {
                             // If there is such a property, and it is 'true'
                             if(results.length && results[0].value) {
