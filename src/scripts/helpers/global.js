@@ -76,7 +76,7 @@ function populateThngTemplate(state, thng) {
 
     $('#' + state + ' h1').html(escapeHtml(thng.name));
     $('#' + state + ' p.primary').html(thng.description);
-    $('#' + state + ' .button').html(escapeHtml(thng.customFields.button));
+    // $('#' + state + ' .button').html(escapeHtml(thng.customFields.button));
 
 }
 
